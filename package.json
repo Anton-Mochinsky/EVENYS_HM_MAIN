@@ -2,7 +2,7 @@
   "name": "events-hw",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/Anton-Mochinsky/events-hw-main",
+  "repository": "https://github.com/Anton-Mochinsky/EVENYS_HM_MAIN",
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
@@ -15,7 +15,9 @@
     "preshow:doc": "npm run doc",
     "show:doc": "live-server doc",
     "preshow:dist": "npm run build",
-    "show:dist": "live-server dist"
+    "show:dist": "live-server dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "MIT",
@@ -29,6 +31,7 @@
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
+    "gh-pages": "^6.1.1",
     "html-loader": "^5.0.0",
     "html-webpack-plugin": "^5.6.0",
     "live-server": "^1.2.2",
